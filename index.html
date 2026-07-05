@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Portfolio of Vansh Mishra, B.Tech Computer Science student at VIT Vellore focused on backend systems, data analysis, research, and competitive programming."
+    >
+    <meta name="theme-color" content="#121212">
+    <title>Vansh Mishra | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Vansh Mishra home">
+        <span class="brand-mark">VM</span>
+        <span>
+          <strong>Vansh</strong>
+          <small>Portfolio library</small>
+        </span>
+      </a>
+
+      <nav class="nav-list">
+        <a class="nav-link active" href="#home" data-section="home"><span>HO</span>Home</a>
+        <a class="nav-link" href="#about" data-section="about"><span>AB</span>About</a>
+        <a class="nav-link" href="#research" data-section="research"><span>RE</span>Research</a>
+        <a class="nav-link" href="#projects" data-section="projects"><span>PR</span>Projects</a>
+        <a class="nav-link" href="#skills" data-section="skills"><span>SK</span>Skills</a>
+        <a class="nav-link" href="#resume" data-section="resume"><span>CV</span>Resume</a>
+        <a class="nav-link" href="#contact" data-section="contact"><span>CO</span>Contact</a>
+      </nav>
+
+      <div class="library">
+        <p>Your Library</p>
+        <a href="#projects">Backend systems</a>
+        <a href="#research">Air quality research</a>
+        <a href="#skills">ML and data stack</a>
+      </div>
+
+      <div class="now-playing" aria-label="Currently building">
+        <div class="cover-mini">VO</div>
+        <div>
+          <strong>Currently building</strong>
+          <span>Void PDF backend</span>
+        </div>
+        <div class="equalizer" aria-hidden="true">
+          <i></i><i></i><i></i><i></i>
+        </div>
+      </div>
+    </aside>
+
+    <header class="topbar" id="topbar">
+      <div class="history-buttons" aria-hidden="true">
+        <button type="button" tabindex="-1">&lt;</button>
+        <button type="button" tabindex="-1">&gt;</button>
+      </div>
+      <label class="search">
+        <span aria-hidden="true">Search</span>
+        <input id="site-search" type="search" placeholder="Search projects, skills, research..." autocomplete="off">
+      </label>
+      <div class="top-actions">
+        <a class="ghost-btn" href="mailto:vansh26mishra@gmail.com">Get in touch</a>
+        <a class="white-btn" href="assets/Vansh-Mishra-Resume-July-2026.pdf" download>Download Resume</a>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell">
+      <section class="hero section" id="home" data-section>
+        <div class="hero-gradient"></div>
+        <div class="hero-content reveal">
+          <div class="profile-art" aria-label="Vansh Mishra profile avatar">
+            <span>VM</span>
+          </div>
+          <div class="hero-copy">
+            <p class="eyebrow">Profile</p>
+            <h1>Vansh Mishra</h1>
+            <p class="subtitle">
+              Computer Science student at VIT Vellore with a growing focus on machine learning, data science, 
+              and the mathematics that underpins them. I'm drawn to problems where structured data 
+              meets scale — how you go from a raw signal to a working model, and from a working model to a 
+              system that holds up in production.
+            </p>
+            <div class="metadata">
+              <span>VIT Vellore, 2024-2028</span>
+              <span>CGPA 9.35</span>
+              <span>270+ LeetCode problems</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="action-strip" aria-label="Profile actions">
+        <a class="play-contact" href="mailto:vansh26mishra@gmail.com" aria-label="Contact Vansh Mishra">
+          <span class="play-icon" aria-hidden="true"></span>
+          <span class="play-text">Contact Me</span>
+        </a>
+        <button class="more-btn" id="more-button" type="button" aria-haspopup="true" aria-expanded="false">...</button>
+        <div class="more-menu" id="more-menu">
+          <a href="assets/Vansh-Mishra-Resume-July-2026.pdf" download>Download resume</a>
+          <button type="button" id="copy-email">Copy email</button>
+          <a href="https://github.com/VanshMishra26" target="_blank" rel="noreferrer">View GitHub</a>
+        </div>
+      </div>
+
+      <section class="section about-section reveal" id="about" data-section>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Made for Vansh</p>
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="bio-panel">
+          <p>
+            I'm a Computer Science undergraduate who likes work where systems meet evidence — APIs
+            that fail cleanly, data workflows that can be trusted, and research code that 
+            turns messy measurements into decisions. My recent work spans a Flask PDF processing
+            backend, a FastAPI medical triage service with a rule-based symptom parser CLI, 
+            cache-performance simulation, and an IIT Kanpur research internship applying machine 
+            learning to PM2.5 source apportionment.
+          </p>
+          <p class="bio-extra" id="bio-extra">
+            At VIT Vellore, I have kept a strong academic record while building across Python,
+            FastAPI, Flask, pandas, NumPy, scikit-learn, SQLite, and testing tools. I have solved
+            270+ DSA problems on LeetCode and earned the 100 Days Badge in 2025.
+          </p>
+          <button type="button" class="text-link" id="bio-toggle" aria-expanded="true">Show less</button>
+        </div>
+      </section>
+
+      <section class="section shelf-section reveal" id="research" data-section>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Research radio</p>
+            <h2>Research & Academic Work</h2>
+          </div>
+        </div>
+        <div class="featured-research searchable" data-search="iit kanpur kotak school sustainability smps pmf nmf air quality delhi regression pm2.5">
+          <div class="research-cover cover-air">
+            <span>PM2.5</span>
+          </div>
+          <div class="research-copy">
+            <p class="eyebrow">Summer Research Internship</p>
+            <h3>Kotak School of Sustainability, IIT Kanpur</h3>
+            <p>
+              Worked under Prof. Sachchida Nand Tripathi on air-quality data analysis and
+              source apportionment using SMPS datasets from 44 CPCB monitoring sensors across Delhi.
+            </p>
+            <div class="research-grid">
+              <span>15 May 2026 - 15 June 2026</span>
+              <span>14 months of CPCB data</span>
+              <span>PMF and NMF source apportionment</span>
+              <span>Regression, polar plots, hotspot maps</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shelf-section reveal" id="projects" data-section>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Top results</p>
+            <h2>Projects</h2>
+          </div>
+          <button class="show-all" type="button" data-scroll-row="projects-row">Show all</button>
+        </div>
+        <div class="shelf-wrap">
+          <button class="shelf-arrow left" type="button" data-row-target="projects-row" data-dir="-1" aria-label="Scroll projects left">&lt;</button>
+          <div class="card-row" id="projects-row">
+            <article class="album-card searchable" tabindex="0" data-search="void modular pdf processing backend python flask pymupdf pypdf2 sqlite" data-project="void">
+              <div class="album-cover cover-void"><span>VOID</span><button type="button" aria-label="Open Void project">Play</button></div>
+              <h3>Void</h3>
+              <p>Modular PDF processing backend with merge, split, compress, download, and job status endpoints.</p>
+              <div class="tags"><span>Python</span><span>Flask</span><span>SQLite</span></div>
+            </article>
+            <article class="album-card searchable" tabindex="0" data-search="multi level cache performance analyzer python matplotlib numpy lru ai prefetcher amat" data-project="cache">
+              <div class="album-cover cover-cache"><span>L1/L2/L3</span><button type="button" aria-label="Open cache analyzer project">Play</button></div>
+              <h3>Multi-Level Cache Performance Analyzer</h3>
+              <p>Cache hierarchy simulator with LRU eviction, Markov-based AI prefetching, and AMAT analysis.</p>
+              <div class="tags"><span>Python</span><span>NumPy</span><span>Matplotlib</span></div>
+            </article>
+            <article class="album-card searchable" tabindex="0" data-search="asclepius fastapi medical symptom triage api pydantic validation swagger openapi" data-project="asclepius">
+              <div class="album-cover cover-asclepius"><span>API</span><button type="button" aria-label="Open Asclepius project">Play</button></div>
+              <h3>Asclepius FastAPI</h3>
+              <p>Medical symptom triage API with validation, history endpoints, middleware, and OpenAPI docs.</p>
+              <div class="tags"><span>FastAPI</span><span>Pydantic</span><span>REST</span></div>
+            </article>
+          </div>
+          <button class="shelf-arrow right" type="button" data-row-target="projects-row" data-dir="1" aria-label="Scroll projects right">&gt;</button>
+        </div>
+      </section>
+
+      <section class="section shelf-section reveal" id="achievements">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Daily mix</p>
+            <h2>Competitive Programming & Achievements</h2>
+          </div>
+        </div>
+        <div class="achievement-grid">
+          <div class="stat-card searchable" data-search="leetcode 270 dsa 100 days badge 2025">
+            <span class="stat-number" data-counter="270">270+</span>
+            <strong>DSA problems solved</strong>
+            <p>LeetCode 100 Days Badge 2025, with consistent practice across core problem-solving patterns.</p>
+          </div>
+          <div class="stat-card searchable" data-search="smart india hackathon top 15 250 teams">
+            <span class="stat-number">Top 15</span>
+            <strong>Smart India Hackathon</strong>
+            <p>Ranked among the top 15 of 250 teams, demonstrating product thinking under constraints.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section reveal" id="skills" data-section>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Genres and artists</p>
+            <h2>Skills</h2>
+          </div>
+        </div>
+        <div class="skill-artists">
+          <div class="artist-card searchable" data-search="data analysis pandas numpy scikit learn matplotlib seaborn regression clustering">
+            <div>DA</div><strong>Data Analysis</strong><span>pandas, NumPy, plots, models</span>
+          </div>
+          <div class="artist-card searchable" data-search="backend development rest api flask fastapi sqlite validation testing">
+            <div>BE</div><strong>Backend Development</strong><span>REST APIs, Flask, FastAPI</span>
+          </div>
+          <div class="artist-card searchable" data-search="machine learning random forest linear logistic regression decision trees clustering">
+            <div>ML</div><strong>ML Foundations</strong><span>Regression, trees, clustering</span>
+          </div>
+          <div class="artist-card searchable" data-search="competitive programming dsa leetcode c++ java python">
+            <div>CP</div><strong>Competitive Programming</strong><span>270+ LeetCode problems</span>
+          </div>
+        </div>
+        <div class="chip-grid" aria-label="Technology stack">
+          <span class="chip searchable" data-search="python">Python</span>
+          <span class="chip searchable" data-search="c c++">C/C++</span>
+          <span class="chip searchable" data-search="java">Java</span>
+          <span class="chip searchable" data-search="r">R</span>
+          <span class="chip searchable" data-search="matlab">MATLAB</span>
+          <span class="chip searchable" data-search="html css">HTML/CSS</span>
+          <span class="chip searchable" data-search="fastapi">FastAPI</span>
+          <span class="chip searchable" data-search="flask">Flask</span>
+          <span class="chip searchable" data-search="streamlit">Streamlit</span>
+          <span class="chip searchable" data-search="vite">Vite</span>
+          <span class="chip searchable" data-search="sqlite">SQLite</span>
+          <span class="chip searchable" data-search="pytest">pytest</span>
+          <span class="chip searchable" data-search="pydantic">Pydantic</span>
+          <span class="chip searchable" data-search="pmf nmf source apportionment">PMF/NMF</span>
+        </div>
+      </section>
+
+      <section class="section resume-section reveal" id="resume" data-section>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Track list</p>
+            <h2>Resume</h2>
+          </div>
+          <a class="green-pill" href="assets/Vansh-Mishra-Resume-July-2026.pdf" download>Download PDF</a>
+        </div>
+        <div class="track-list" role="table" aria-label="Resume track list">
+          <div class="track-row track-head" role="row">
+            <span>#</span><span>Title</span><span>Album</span><span>Date Added</span><span>Duration</span>
+          </div>
+          <div class="track-row searchable" role="row" data-search="vit vellore btech computer science cgpa 9.35">
+            <span>1</span><span><strong>B.Tech in Computer Science</strong><small>CGPA 9.35, 5th semester</small></span><span>VIT Vellore</span><span>July 2024</span><span>2028</span>
+          </div>
+          <div class="track-row searchable" role="row" data-search="iit kanpur summer research intern sustainability pm2.5 smps">
+            <span>2</span><span><strong>Summer Research Intern</strong><small>Air quality data analysis and source apportionment</small></span><span>IIT Kanpur</span><span>May 2026</span><span>1 mo</span>
+          </div>
+          <div class="track-row searchable" role="row" data-search="void flask pdf processing backend sqlite">
+            <span>3</span><span><strong>Void</strong><small>Modular PDF processing backend</small></span><span>Project</span><span>2026</span><span>5 APIs</span>
+          </div>
+          <div class="track-row searchable" role="row" data-search="nurture international school cbse 94.2 96.5">
+            <span>4</span><span><strong>CBSE Academic Foundation</strong><small>Class XII 94.2%, Class X 96.5%</small></span><span>Nurture International School</span><span>Kanpur</span><span>96.5%</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section reveal" id="contact" data-section>
+        <div>
+          <p class="eyebrow">Open for collaboration</p>
+          <h2>Let us build something precise.</h2>
+          <p>
+            I am interested in backend engineering, data analysis, research tooling,
+            and projects where correctness matters.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:vansh26mishra@gmail.com">Email</a>
+          <a href="https://github.com/VanshMishra26" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://leetcode.com/u/VanshMishra2627/" target="_blank" rel="noreferrer">LeetCode</a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>
+          <h3>About</h3>
+          <a href="#about">Profile</a>
+          <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <a href="mailto:vansh26mishra@gmail.com">vansh26mishra@gmail.com</a>
+          <a href="https://github.com/VanshMishra26" target="_blank" rel="noreferrer">github.com/VanshMishra26</a>
+          <a href="https://leetcode.com/u/VanshMishra2627/" target="_blank" rel="noreferrer">LeetCode profile</a>
+        </div>
+        <div>
+          <h3>Accent</h3>
+          <label class="accent-picker">
+            <span>Theme color</span>
+            <select id="accent-picker">
+              <option value="#1DB954">Spotify green</option>
+              <option value="#2d8cff">Research blue</option>
+              <option value="#af64ff">Systems purple</option>
+              <option value="#ff7a1a">Build orange</option>
+            </select>
+          </label>
+        </div>
+      </footer>
+    </main>
+
+    <nav class="mobile-tabs" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <dialog class="project-modal" id="project-modal">
+      <button class="modal-close" type="button" id="modal-close" aria-label="Close project details">&lt;</button>
+      <div id="modal-content"></div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
