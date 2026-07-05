@@ -2,6 +2,10 @@
 
 A deployable Spotify-inspired portfolio website for Vansh Mishra. The site is built as static HTML, CSS, and JavaScript, so it can be hosted on Vercel, Netlify, GitHub Pages, or any static file host.
 
+## Live Site
+
+View the deployed portfolio here: <https://vansh-mishra-portfolio.vercel.app/>
+
 ## Files
 
 - `index.html` - page structure and portfolio content
@@ -20,5 +24,7 @@ python -m http.server 5173
 Then visit `http://localhost:5173`.
 
 ## Deploy
+
+This portfolio is currently deployed on Vercel at <https://vansh-mishra-portfolio.vercel.app/>.
 
 For Vercel or Netlify, deploy the repository root as a static site. No build command is required.
